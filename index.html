@@ -1,37 +1,146 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
 
-You can use the [editor on GitHub](https://github.com/lisa6125/week6/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="all.css">
+</head>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<body class="py-4">
+    <div class="container">
+        <h1>Bootstrap grid examples</h1>
+        <p class="lead">Basic grid layouts to get you familiar with building within the Bootstrap grid system.
+        </p>
+        <p>
+            In these examples the <code>.themed-grid-col</code> class is added to the columns to add some theming. This
+            is not a class that is
+            available in Bootstrap by default.
+        </p>
+        <h2 class="mt-4">Five grid tiers</h2>
+        <p>There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts
+            at a
+            minimum viewport size and automatically applies to the larger devices unless overridden.
+        </p>
 
-### Markdown
+        <div class="row mb-3">
+            <div class="col-4 themed-grid-col">.col-4</div>
+            <div class="col-4 themed-grid-col">.col-4</div>
+            <div class="col-4 themed-grid-col">.col-4</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-4 themed-grid-col">.col-sm-4</div>
+            <div class="col-sm-4 themed-grid-col">.col-sm-4</div>
+            <div class="col-sm-4 themed-grid-col">.col-sm-4</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-4 themed-grid-col">.col-md-4</div>
+            <div class="col-md-4 themed-grid-col">.col-md-4</div>
+            <div class="col-md-4 themed-grid-col">.col-md-4</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-lg-4 themed-grid-col">.col-lg-4</div>
+            <div class="col-lg-4 themed-grid-col">.col-lg-4</div>
+            <div class="col-lg-4 themed-grid-col">.col-lg-4</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-xl-4 themed-grid-col">.col-xl-4</div>
+            <div class="col-xl-4 themed-grid-col">.col-xl-4</div>
+            <div class="col-xl-4 themed-grid-col">.col-xl-4</div>
+        </div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        <h2 class="mt-4">Three equal columns</h2>
+        <p>Get three equal-width columns <strong>starting at desktops and scaling to large desktops</strong>. On mobile
+            devices, tablets and below,
+            the columns will automatically stack.</p>
+        <div class="row mb-3">
+            <div class="col-md-4 themed-grid-col">.col-md-4</div>
+            <div class="col-md-4 themed-grid-col">.col-md-4</div>
+            <div class="col-md-4 themed-grid-col">.col-md-4</div>
+        </div>
 
-```markdown
-Syntax highlighted code block
+        <h2 class="mt-4">Three unequal columns</h2>
+        <p>Get three columns <strong>starting at desktops and scaling to large desktops</strong> of various widths.
+            Remember, grid columns should
+            add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the
+            viewport.</p>
+        <div class="row mb-3">
+            <div class="col-md-3 themed-grid-col">.col-md-3</div>
+            <div class="col-md-6 themed-grid-col">.col-md-6</div>
+            <div class="col-md-3 themed-grid-col">.col-md-3</div>
+        </div>
 
-# Header 1
-## Header 2
-### Header 3
+        <h2 class="mt-4">Two columns</h2>
+        <p>Get two columns <strong>starting at desktops and scaling to large desktops</strong> .</p>
+        <div class="row">
+            <div class="col-md-8 themed-grid-col">col-md-8</div>
+            <div class="col-md-4 themed-grid-col">col-md-4</div>
+        </div>
 
-- Bulleted
-- List
+        <h2 class="mt-4">Full width, single column</h2>
+        <p class="text-warning">No grid classes are necessary for full-width elements.</p>
 
-1. Numbered
-2. List
+        <hr class="my-4">
 
-**Bold** and _Italic_ and `Code` text
+        <h2 class="mt-4">Two columns with two nested columns</h2>
 
-[Link](url) and ![Image](src)
-```
+        <h2 class="mt-4">Two columns with two nested columns</h2>
+        <p>Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you
+            two columns
+            <strong>starting at desktops and scaling to large desktops</strong>, with another two (equal widths) within
+            the larger column.</p>
+        <p>At mobile device sizes, tablets and down, these columns and their nested columns will stack.</p>
+        <div class="row">
+            <div class="col-md-8 themed-grid-col">
+                <p>.col-md-8</p>
+                <div class="row">
+                    <div class="col-md-6 themed-grid-col">col-md-6</div>
+                    <div class="col-md-6 themed-grid-col">col-md-6</div>
+                </div>
+            </div>
+            <div class="col-md-4 themed-grid-col">.col-md-4</div>
+        </div>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+        <hr class="my-4">
 
-### Jekyll Themes
+        <h2 class="mt-4">Mixed: mobile and desktop</h2>
+        <p>The Bootstrap v4 grid system has five tiers of classes: xs (extra small), sm (small), md (medium), lg
+            (large), and xl
+            (extra large). You can use nearly any combination of these classes to create more dynamic and flexible
+            layouts.</p>
+        <p>Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need
+            to specify
+            xs.</p>
+        <div class="row mb-3">
+            <div class="col-12 col-md-8 themed-grid-col">.col-12 .col-md-8</div>
+            <div class="col-6 col-md-4 themed-grid-col">col-6 col-md-4</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-6 col-md-4 themed-grid-col">.col-6 .col-md-4</div>
+            <div class="col-6 col-md-4 themed-grid-col">.col-6 .col-md-4</div>
+            <div class="col-6 col-md-4 themed-grid-col">.col-6 .col-md-4</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-6 themed-grid-col">.col-6</div>
+            <div class="col-6 themed-grid-col">.col-6</div>
+        </div>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lisa6125/week6/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+        <hr class="my-4">
 
-### Support or Contact
+        <h2 class="mt-4">Mixed: mobile, tablet, and desktop</h2>
+        <div class="row mb-3">
+            <div class="col-12 col-sm-6 col-lg-8 themed-grid-col">.col-12 .col-sm-6 .col-lg-8</div>
+            <div class="col-6 col-lg-4 themed-grid-col">.col-6 .col-lg-4</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-6 col-sm-4 themed-grid-col">.col-6 .col-sm-4</div>
+            <div class="col-6 col-sm-4 themed-grid-col">.col-6 .col-sm-4</div>
+            <div class="col-6 col-sm-4 themed-grid-col">.col-6 .col-sm-4</div>
+        </div>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+        <button class="btn btn-primary">按鈕</button>
+    </div>
+</body>
+
+</html>
